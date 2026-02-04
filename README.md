@@ -364,20 +364,7 @@ All are production-grade, stable libraries with active maintenance.
 
 ---
 
-## 📈 Next Steps (Not Included)
 
-This is a minimal prototype. For production, consider:
-
-- [ ] Authentication/authorization for FastAPI
-- [ ] Persistent chat history (database)
-- [ ] Document uploads and management UI
-- [ ] User-specific knowledge bases
-- [ ] Semantic caching for repeated queries
-- [ ] Advanced RAG (multi-hop retrieval, reranking)
-- [ ] Performance monitoring and metrics
-- [ ] CI/CD pipeline for deployment
-
----
 
 ## 📄 License
 
@@ -395,16 +382,7 @@ For issues or questions:
 
 ---
 
-## ✨ What You've Built
 
-A complete RAG system that:
-- ✅ Runs entirely locally (no cloud LLM needed)
-- ✅ Retrieves relevant context accurately
-- ✅ Generates grounded, accurate responses
-- ✅ Shows source documents for transparency
-- ✅ Has a clean, user-friendly UI
-- ✅ Is production-ready with proper error handling
-- ✅ Uses stable, well-documented libraries
-- ✅ Can be deployed and scaled
+For the convinience of the tester,the api key of pinecone has been exposed in the .env file of the code 
 
-Congratulations! 🎉
+
