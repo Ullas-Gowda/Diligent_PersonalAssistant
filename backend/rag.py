@@ -4,9 +4,9 @@ Combines document retrieval with LLM generation.
 """
 
 from typing import Optional
-from embeddings import embed_text
-from vector_db import PineconeVectorDB
-from llm import OllamaLLM
+from backend.embeddings import embed_text
+from backend.vector_db import PineconeVectorDB
+from backend.llm import OllamaLLM
 
 
 class RAGEngine:

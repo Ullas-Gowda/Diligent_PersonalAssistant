@@ -4,15 +4,19 @@ Exposes /chat endpoint for RAG-powered responses.
 """
 
 import os
+from dotenv import load_dotenv
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from typing import Optional
 
-from vector_db import PineconeVectorDB
-from llm import OllamaLLM
-from rag import RAGEngine
-from embeddings import embed_text, embed_batch, EMBEDDING_DIMENSION
+# Load environment variables from .env file
+load_dotenv()
+
+from backend.vector_db import PineconeVectorDB
+from backend.llm import OllamaLLM
+from backend.rag import RAGEngine
+from backend.embeddings import embed_text, embed_batch, EMBEDDING_DIMENSION
 
 
 # ============================================================================
